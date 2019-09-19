@@ -13,14 +13,14 @@ function App() {
     }
   ]);
 
-    const addNewTeam = tm => {
-      const newTM = {
+    const addNewTeam = teamMember => {
+      const newTeamMember = {
         id: Date.now(),
-        name: tm.name,
-        email: tm.email,
-        role: tm.role
+        name: teamMember.name,
+        email: teamMember.email,
+        role: teamMember.role
       };
-        setTeam([...team, newTM]);
+        setTeam([...team, newTeamMember]);
     }
 
   return (
